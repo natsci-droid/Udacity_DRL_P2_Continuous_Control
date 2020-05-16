@@ -38,7 +38,7 @@ The plots below show the training score for all agents and the average score acr
 ![Scores][image1]
 ![Average Scores][image2]
 
-By keeping all hyperparameter fixed and only changing max_t from 1000 to 700, training plateaus around an average score of 7. This highlights the important of a strong reward signal, which many require a larger number of observations.
+By keeping all hyperparameters fixed and only changing max_t from 1000 to 700, training plateaus around an average score of 7. This highlights the important of a strong reward signal, which many require a larger number of observations. In this example, every time the enviroment is reset, the agent has to find its way into position before it can receieve any reward. Once in position, it is much easier to obtain a reward and learn beneficial states and actions.
 
 Without batch normalisation and with an epsilon value of 1, the agent plateaus around an average score of 20.
 
