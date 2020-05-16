@@ -36,7 +36,7 @@ Following guidance, the network is not updated at every step, in an attempt to p
 The plots below show the training score for all agents and the average score across all agents for each episode in training. The environment was solved in 108 episodes.
 
 ![Scores][image1]
-![Average Scores][image1]
+![Average Scores][image2]
 
 By keeping all hyperparameter fixed and only changing max_t from 1000 to 700, training plateaus around an average score of 7. This highlights the important of a strong reward signal, which many require a larger number of observations.
 
