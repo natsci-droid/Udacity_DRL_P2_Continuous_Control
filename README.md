@@ -46,7 +46,7 @@ This code requires python3 and pytorch, which are available through anaconda and
 
 Follow the instructions in `Continuous_Control.ipynb` to get started with training the agent. You may change the hyperparameters in the notebook to investigate how these affect training and performance.
 
-The neural network that is used by the agent is defined in model.py and the agent pollicy is determined in dqn_agent.py.
+The neural network that is used by the agent is defined in model.py and the agent pollicy is determined in ddpg_agent.py.
 
 For more information on the Deep Deterministic Poligy Gradient (DDPG) method, read the [paper](https://arxiv.org/abs/1509.02971).
 
