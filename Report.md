@@ -13,15 +13,15 @@ This report describes the implementation of the Deep Deterministic Poligy Gradie
 The agent was first trained using small adaptions to the example code provided as part of Udacity's course with the hyperparameters set to those in the DDPG paper. However, this resulted in an agent that could not train very succesfully, so the hyperparameters were changed one by one to examine the impact on training. It took many attempts to find a set of hyperparameters and a network architecture that could succesfully train the agent to solve the environment. Many combinations either started to train and then plateaud, or dropped off towards zero reward.
 
 Eventually, the hyperparameters below were found to solve the environment:
-* BUFFER_SIZE = int(1e6)  # replay buffer size
-* BATCH_SIZE = 128        # minibatch size
-* GAMMA = 0.95            # discount factor
-* TAU = 1e-3              # for soft update of target parameters
-* LR_ACTOR = 1e-4         # learning rate of the actor 
-* LR_CRITIC = 1e-3        # learning rate of the critic
-* WEIGHT_DECAY = 0        # L2 weight decay
-* UPDATE_EVERY = 20       # how often to update the network
-* EPSILON = 0.5           # how much to scale the noise
+* BUFFER_SIZE = int(1e6)  (replay buffer size)
+* BATCH_SIZE = 128        (minibatch size)
+* GAMMA = 0.95            (discount factor)
+* TAU = 1e-3              (for soft update of target parameters)
+* LR_ACTOR = 1e-4         (learning rate of the actor)
+* LR_CRITIC = 1e-3        (learning rate of the critic)
+* WEIGHT_DECAY = 0        (L2 weight decay)
+* UPDATE_EVERY = 20       (how often to update the network)
+* EPSILON = 0.5           (how much to scale the noise)
 
 The change with the most impact was increasing the number of observations per episode (max_t) from 700 to 1000. This gives the agent a greater reward signal, as well as more states to observe.
 
